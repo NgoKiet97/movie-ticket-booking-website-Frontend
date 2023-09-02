@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Site information -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='revisit-after' content='7 days' />
+    <title>Thông tin cá nhân</title>
+    <meta itemprop='name' content='Thông tin cá nhân | Starlight'>
+    <meta property='og:title' content='Thông tin cá nhân | Starlight' />
+    <meta name='twitter:title' content='Thông tin cá nhân | Starlight' />
+    <meta name='twitter:card' content='summary' />
+    <meta name='description' content='đặt vé xem phim, đặt vé xem phim Starlight' />
+    <meta name='twitter:description' content='đặt vé xem phim, đặt vé xem phim Starlight' />
+    <meta itemprop='description' content='đặt vé xem phim, đặt vé xem phim Starlight' />
+    <meta property='og:description' content='đặt vé xem phim, đặt vé xem phim Starlight' />
+    <meta itemprop='image' content='www.starlight.vn'>
+    <meta property='og:image' content='www.starlight.vn' />
+    <meta name='twitter:image' content='www.starlight.vn' />
+    <meta property='og:locale' content='vi_VN' />
+    <link rel='alternate' hreflang='vi_VN' href='https://starlight.vn/thong-tin-tai-khoan.html'>
+    <meta property='og:type' content='website' />
+    <meta name='keywords'
+        content='đặt vé xem phim, đặt vé xem phim StarLight, ưu đãi lớn khi xem phim, xem phim nhận ưu đãi, phim mới nhất, xem phim giá rẻ, giá vé tốt cho sinh viên' />
+    <meta property='og:site_name' content='StarLightSITE' />
+    <meta name='twitter:site' content='StarLightSITE' />
+    <meta name='robots' content='index,follow' />
+    <meta property='fb:admins' content='' />
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,bold,100,200,300,400,500,600,700,800"
+        rel="stylesheet">
+    <!-- External CSS -->
+    <link href="/Content/Style?v=2eyCs_lCoVJbkUS9Odb-D-LO5Gx5E3OJs8QOHVYOmFc1" rel="stylesheet" />
+
+
+    <!-- Google Fonts -->
+    <!-- Favicon -->
+    <link rel="icon" href="/Content/img/ThikiMovieLogoO.png">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function () {
+            OneSignal.init({
+                appId: "d17589a4-68d3-451d-98d8-ffef22409a32",
+            });
+        });
+
+
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N43DT6C');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div style="display:none" class="main-reloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader End -->
+    <!-- Main Header -->
+
+    <header class="filmoja-header-area">
+
+        <!-- Header Top Area Start -->
+        <div class="header-top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-3 col-sm-12">
+                        <div class="header-top-social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-9 col-sm-12">
+                        <div class="header-top-menu">
+                            <ul>
+
+                                <li><a href="/cau-hoi-thuong-gap.html">FAQ's</a></li>
+
+
+                                <li class="user-loged" style="border: 1px solid #f37737;">
+                                    <a style="color:#fff" title="Ng&#244; Kiệt" href="#">Ng&#244; Kiệt</a>
+
+                                    <ul class="info_option">
+                                        <li><a href="/thong-tin-tai-khoan.html"><i class="fa fa-user"></i>&nbsp;
+                                                Th&#244;ng tin</a></li>
+                                        <li><a href="#" onclick="logOut()"><i class="fa fa-sign-out"></i>&nbsp; Đăng
+                                                xuất</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <script>
+                                    function logOut() {
+                                        $.ajax({
+                                            url: "/MemberRegister/Logout",
+                                            type: "POST",
+                                            traditional: true,
+                                            datatype: "json",
+                                            contentType: 'application/json; charset=utf-8',
+                                            success: function (result) {
+                                                //alert(result);
+                                                if (result === "true" || result === true) {
+                                                    location.href = "/";
+                                                } else {
+                                                }
+                                            },
+                                            error: function () {
+                                                return false;
+                                            }
+                                        });
+                                    }
+                                </script>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Top Area End -->
+        <!-- Main Header Area Start -->
+        <header class="filmoja-header-area">
+            <!-- Main Header Area Start -->
+            <div class="main-header-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="site-logo">
+                                <a href="index.html">
+                                    <img src="Content/img/ThikiMovieLogoO.png" alt="filmoja" />
+                                </a>
+                            </div>
+                            <!-- Responsive Menu Start -->
+                            <div class="filmoja-responsive-menu"></div>
+                            <!-- Responsive Menu End -->
+                        </div>
+    
+                        <div class="col-lg-7 mainmenu-container" >
+                            <div class="mainmenu">
+                                <nav>
+                                    <ul id="responsive_navigation">
+                                        <!-- Mobile Search Start -->
+                                        <!-- Mobile Search End -->
+                                        <li><a href="index.html">Trang chủ</a></li>
+                                        <li>
+                                            <a href="lich-chieu.html">Lịch chiếu</a>
+                                        </li>
+                                        <li>
+                                            <a href="phim.html">Phim</a>                                   
+                                        </li>
+                                        <li><a href="lien-he.html">Liên hệ</a></li>
+    
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-2 header-top-area-container">
+                            <!-- Header Top Area Start -->
+                            <div class="header-top-area">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="header-top-menu">
+                                            <ul>
+                                                <li><a href="dang-nhap.html" class="btn-member">Đăng nhập</a></li>
+                                                <li><a href="dang-ky.html" class="btn-member">Đăng k&#253;</a></li>
+    
+                                                <script>
+                                                    function logOut() {
+                                                        $.ajax({
+                                                            url: "/MemberRegister/Logout",
+                                                            type: "POST",
+                                                            traditional: true,
+                                                            datatype: "json",
+                                                            contentType: 'application/json; charset=utf-8',
+                                                            success: function (result) {
+                                                                //alert(result);
+                                                                if (result === "true" || result === true) {
+                                                                    location.href = "index.html";
+                                                                } else {
+                                                                }
+                                                            },
+                                                            error: function () {
+                                                                return false;
+                                                            }
+                                                        });
+                                                    }
+                                                </script>
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Header Top Area End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Header Area End -->
+    
+        </header>
+        <!-- Main Header Area End -->
+
+    </header>
+    <script>
+        function openNav() {
+            document.getElementById("mobileMenu").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mobileMenu").style.width = "0";
+        }
+    </script>
+
+    <!-- Main Header End -->
+
+
+
+    <section class="filmoja-login-area section_70 container bg-main"
+        style="background: #e6e7e9; max-width: 100% !important; border-top: 1px solid;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="auth-box-right">
+                        <h3>Th&#244;ng tin c&#225; nh&#226;n</h3>
+                        <div class="login-box">
+
+                            <p>Ng&#244; Kiệt</p>
+                            <p>Điện thoại: 11111111</p>
+                            <p>Địa chỉ: Quy Nhơn, B&#236;nh Định</p>
+                            <p>Email: ntkiet@gmail.com</p>
+                            
+                            <div>
+                                <div style="float:left;width:49%">
+                                    <p style="font-weight:bold;color:#f37737">Điểm t&#237;ch lũy</p>
+                                    <p>0</p>
+                                </div>
+                                <div style="float:left;width:49%">
+                                    <p style="font-weight:bold;color:#f37737">Điểm thưởng</p>
+                                    <p>0</p>
+                                </div>
+                            </div>
+                            <a href="/doi-mat-khau.html">Đổi mật khẩu</a>
+                            <a href="/cap-nhat-tai-khoan.html">Cập nhật th&#244;ng tin</a>
+
+                            <a href="/online-booking-check.html">Lịch sử giao dịch online</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="auth-box-left margin-top">
+                        <h3>Lịch sử giao dịch</h3>
+                        <div class="login-box" style="text-align:left;padding:0 !important">
+                            <div>
+                                <table class="table">
+                                    <thead>
+                                        <tr style="font-weight:bold;color:#f37737">
+                                            <th style="color:#f37737">Rạp</th>
+                                            <th style="color:#f37737">T&#234;n phim</th>
+                                            <th style="color:#f37737">Tổng tiền</th>
+                                            <th style="color:#f37737">Điểm thưởng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td colspan="4">Kh&#244;ng c&#243; dữ liệu</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Start -->
+
+    <footer class="filmoja-footer-area">
+        <div class="footer-top-area section_70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-footer-widget">
+                            <a href="#"><img src="Content/img/ThikiMovieLogoO.png" alt="footer logo" /></a>
+
+                            <div class="footer-contact">
+                                <p>Support: <a href="#">support@thikimovie.vn</a></p>
+                                <p>Hotline: <a href="tell:1900 1722">9999 9999</a></p>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h3>Chính sách</h3>
+                            <ul>
+                                <li><a href="#"><i
+                                            class="fa fa-angle-double-right"></i>Điều khoản chung</a></li>
+                                <li><a href="#"><i
+                                            class="fa fa-angle-double-right"></i>Chính sách thanh toán</a></li>
+                                <li><a href="#"><i
+                                            class="fa fa-angle-double-right"></i>Chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h3>LIÊN HỆ</h3>
+                            <div class="footer-app-box">
+                                <p>CyberSoft Academy</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-box">
+                            <p>2023 © ThikiMovie. All rights reserved - Design by Thi + Kiet</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section>
+        <div id="mobile-menu">
+            <ul>
+                <li><a class="" href="/" style="background-color:#2b2b31;"><i class="fa fa-home"></i><br />Trang Chủ</a>
+                </li>
+                <li>
+                    <p onclick="toggleMBooking()" style="background-color: #2b2b31;"><i class="fa fa-ticket"></i><br />
+                        Đặt V&#233;</p>
+                </li>
+                <li><a class="" href="/lich-chieu.html" style="background-color: #2b2b31;"><i
+                            class="fa fa-film"></i><br /> Lịch Chiếu</a></li>
+                <li><a href="/uu-dai.html" style="background-color: #2b2b31;"><i class="fa fa-gift"></i><br /> Ưu
+                        Đ&#227;i</a></li>
+            </ul>
+        </div>
+
+    </section>
+    <section>
+        <div class="mobile-book">
+            <select class="slMTheater" onchange="selectMServer(this)">
+                <option value="0">Rạp</option>
+            </select>
+            <select class="slMFilm" onchange="selectMFilm(this)">
+                <option value="0">Phim</option>
+            </select>
+            <select class="slMDate" onchange="selectMDate(this)">
+                <option value="0">Ng&#224;y chiếu</option>
+            </select>
+            <select class="slMTime" onchange="selectMTime(this)">
+                <option value="0">Suất chiếu</option>
+            </select>
+            <a id="btnMBooking" onclick="btnMBooking()">Mua V&#233; Ngay</a>
+        </div>
+    </section>
+
+
+    <script>
+        function logOutMenu() {
+            $.ajax({
+                url: "/MemberRegister/Logout",
+                type: "POST",
+                traditional: true,
+                datatype: "json",
+                contentType: 'application/json; charset=utf-8',
+                success: function (result) {
+                    //alert(result);
+                    if (result === "true" || result === true) {
+                        location.href = "/";
+                    } else {
+                    }
+                },
+                error: function () {
+                    return false;
+                }
+            });
+        }
+    </script>
+    <script>
+        function toggleMBooking() {
+            $(".mobile-book").toggleClass("show-mobile-book");
+        }
+    </script>
+    <!-- Load Facebook SDK for JavaScript -->
+
+    <div class="modal fade" id="adsImageModal" role="dialog" style="background: rgba(51, 51, 51, 0.46);">
+        <div class="modal-dialog" style="width:95%;max-width:95%;margin:100px auto;">
+            <!-- Modal content-->
+            <div class="modal-content" style="    max-width: 1000px;margin: 0 auto;">
+                <div class="modal-body" style="padding:0">
+                    <img id="adsImage" style="    border: 3px solid #000;border-radius: 3px;width:100%"
+                        src="http://www.starlight.vn/Areas/Admin/Content/Fileuploads/images/POSTER/z2950019928727_f1e225b7c12d6c9e9cd4af710d7e685f.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Scripts/Style?v=_f8__VSi4vuTzCN0MMHUM1jt_vaACvuT1VJNbzQ6qPY1"></script>
+
+    <script src="/Scripts/js/film-script.js"></script>
+
+
+
+</body>
+
+</html>
